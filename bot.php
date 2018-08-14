@@ -29,9 +29,9 @@ if (!is_null($events['events'])) {
 	    		'text' => $processtext
 	     		];
 
-			$url = 'https://api.line.me/v2/bot/message/reply';
+			$url = 'https://api.line.me/v2/bot/message/push';
 			$data = [
-			'replyToken' => $replyToken,
+			'replyToken' => $userId,
 			'messages' => [$messages],
 			];
 
